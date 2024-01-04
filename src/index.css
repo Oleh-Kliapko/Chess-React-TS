@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @apply w-screen h-screen flex justify-center items-center mx-auto p-10;
+}
+
+.board {
+  @apply w-[784px] h-[784px] flex flex-wrap shadow-xl shadow-emerald-700 border-4 border-amber-950 p-1 m-0;
+}
+
+.cell {
+  @apply w-24 h-24 flex justify-center items-center p-2 relative;
+}
+
+.black {
+  @apply bg-teal-600;
+}
+
+.white {
+  @apply bg-stone-300;
+}
+
+.selected {
+  @apply bg-amber-700;
+}
+
+.available {
+  @apply w-4 h-4 rounded-full bg-teal-400;
+}
+
+.attackedFigure {
+  @apply bg-teal-400;
+}
